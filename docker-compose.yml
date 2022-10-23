@@ -16,3 +16,7 @@ services:
       - "3001:3001"
     environment:
       MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - mysql-db:/var/lib/mysql
+volumes:
+  mysql-db:
